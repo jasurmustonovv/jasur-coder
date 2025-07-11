@@ -1,0 +1,221 @@
+/*Asosiy stillar*/
+
+body {
+    background: #0E121A;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+  
+.container{
+    width: 1250px;
+    margin: 0 auto;
+}
+.clearfix{
+    clear: both;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.to-uppercase{
+    text-transform: uppercase;
+}
+/*Main header styles*/
+.main-header__brand{
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.main-header__brand img{
+    width: 70px;
+    position: relative;
+    left: 20px;
+    top: 7px;
+}
+/*Main navigation*/
+.main-navigation{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 80px;
+
+}
+.main-navigation__item{
+    display: inline-block;
+    padding: 10px;
+}
+
+.main-navigation__item a{
+    color: #C0C0C1;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.main-navigation__items a:hover{
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00ffff;
+}
+.active a{
+    color: #00FFFF;
+}
+
+/*Main navigation*/
+
+/*Main section*/
+.main-section{
+    padding: 100px 30px;
+}
+.main-section > div{
+    width: 50%;
+    float: left;
+}
+.main-section__img {
+    width: 330px;
+    border: 3px solid #00ffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    padding: 5px;
+    background-color: #0e121a;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* ichidagi img overflow qilmasligi uchun */
+  }
+  
+  .main-section__img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  }
+  
+  .main-section__img img {
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .main-section__img:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(1.1);
+  }
+  
+
+.main-section__welcome{
+    color: #00ffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.main-section__position{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ffff;
+}
+.main-section__introduction{
+    margin-top: 10px;
+    text-shadow: 0 0 8px #00e6e6;
+    font-size: 57px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+.main-section-social__networks a{
+    cursor: pointer;
+    margin-right: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    color: #00ffff; /* neon cyan */
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.main-section-social__networks a i:hover{
+    color: #ffffff;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #00ffff;
+}
+/* /Main section*/
+
+/*Buttons*/
+
+.main-section__action{
+    margin-top: 30px;
+}
+
+button{
+    background: #00e6e6;
+    box-shadow: 0 0 15px #00ffff;
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 18px 36px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+    border: none;
+}
+button:hover{
+    transform: scale(1.05);
+    background: #00b3b3;
+    box-shadow: 0 0 25px #00ffff;
+}
+/* /Button*/
+
+/*ABout me*/
+.about-me{
+    padding: 100px 0;
+    letter-spacing: 1px;
+}
+
+.about-me > div{
+    width:40%;
+    float: left;
+}
+.section-subtitle{
+    font-weight: 500;
+    text-transform:uppercase;
+    color: #00FFFF;
+    font-size: 16px;
+}
+.about-me__position{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+}
+.about-me__description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+}
+.about-me__image {
+    width: 330px;
+    border: 3px solid #00ffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    padding: 5px;
+    background-color: #0e121a;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* ichidagi img overflow qilmasligi uchun */
+  }
+  
+  .about-me__image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  }
+  
+  .about-me__image img {
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .about-me__image:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(1.1);
+  }
