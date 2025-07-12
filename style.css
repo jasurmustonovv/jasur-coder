@@ -219,3 +219,54 @@ button:hover{
     transform: scale(1.05);
     filter: brightness(1.1) contrast(1.1);
   }
+
+  /*About me*/
+
+  /*Services section*/
+  .services{
+    padding-top: 150px;
+  }
+  .services__cards{
+    padding-top: 50px;
+  }
+  .service__card{
+    width: 30%;
+    padding: 60px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 3%;
+    background-color: #ffffff;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  .service__card:hover{
+    background-color:#00e6e6;
+    transform: scale(1.05);
+  }
+  .services_title{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #00FFFF;
+  }
+  .services_service{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .service_card-jobs{
+    color: #00b3b3;
+  }
+  .service__card:hover .service_card-jobs,
+  .service__card:hover .service__card-link
+  {
+    color: black;
+  }
+  
+  .service__card-description{
+    color: black;
+  }
+  .service__card .service__card-link{
+    color: #00b3b3;
+    text-shadow: 1px 0 1px #00FFFF;
+  }
