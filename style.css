@@ -49,7 +49,7 @@ body {
 }
 
 .main-navigation__item a{
-    color: #C0C0C1;
+    color: #bbbbd8;
     font-size: 15px;
     font-weight: 500;
     text-decoration: none;
@@ -62,8 +62,9 @@ body {
     text-shadow: 0 0 10px #00ffff;
 }
 .active a{
-    color: #00FFFF;
-}
+  background-image: linear-gradient(to right, rgb(99, 102, 241), rgb(168, 85, 247));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
 
 /*Main navigation*/
 
@@ -119,12 +120,12 @@ body {
 }
 .main-section__introduction{
     margin-top: 10px;
-    text-shadow: 0 0 8px #00e6e6;
     font-size: 57px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #00ffff;
-}
+    background-image: linear-gradient(to right, rgb(99, 102, 241), rgb(168, 85, 247));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
 .main-section-social__networks a{
     cursor: pointer;
     margin-right: 20px;
@@ -225,6 +226,7 @@ button:hover{
   /*Services section*/
   .services{
     padding-top: 150px;
+    
   }
   .services__cards{
     padding-top: 50px;
@@ -235,9 +237,10 @@ button:hover{
     box-sizing: border-box;
     text-align: center;
     margin-right: 3%;
-    background-color: #ffffff;
     display: inline-block;
     transition: all 0.3s ease;
+    background-image: linear-gradient(to right, rgb(99, 102, 241), rgb(168, 85, 247));
+
   }
   .service__card:hover{
     background-color:#00e6e6;
@@ -247,26 +250,42 @@ button:hover{
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #00FFFF;
   }
   .services_service{
     text-transform: capitalize;
     font-size: 25px;
     font-weight: 700;
+    
   }
   .service_card-jobs{
-    color: #00b3b3;
   }
-  .service__card:hover .service_card-jobs,
-  .service__card:hover .service__card-link
-  {
-    color: black;
-  }
-  
+
   .service__card-description{
     color: black;
   }
   .service__card .service__card-link{
-    color: #00b3b3;
-    text-shadow: 1px 0 1px #00FFFF;
+    color:  #00FFFF;
+    text-shadow: 1px 0 1px  #00FFFF;
   }
+  /*services*/
+  .clients{
+    padding-top: 150px;
+  }
+  .clients > div{
+    width: 30%;
+    float: left;
+    
+  }
+  .client_item_info{
+    width: 50%;
+  }
+  .clients_image{
+    width: 100%;
+  }
+  .clients_subtitle{
+    font-weight: 500;
+    text-transform:uppercase;
+    color: #00FFFF;
+    font-size: 16px;
+  }
+ 
