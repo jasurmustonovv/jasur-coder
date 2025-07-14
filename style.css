@@ -27,6 +27,14 @@ body {
 }
 
 /*Main header styles*/
+.main-header{
+  position: fixed;
+  background-color: #0e121a;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 .main-header__brand {
   vertical-align: middle;
   display: inline-block;
@@ -272,22 +280,8 @@ button:hover {
 }
 
 .service__card:hover {
-  background-color: #00e6e6;
+  background-image: linear-gradient(to right, rgb(99, 102, 241), rgb(168, 85, 247));
   transform: scale(1.05);
-}
-
-.services_title {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #00FFFF;
-}
-
-.services_service {
-  text-transform: capitalize;
-  font-size: xx-large;
-  font-weight: 700;
-
 }
 
 .service__card .service__card-link {
@@ -308,11 +302,15 @@ button:hover {
 
 .clients_image img {
   width: 100%;
+  transition: all 0.2s ease;
 }
-.clients_title{
+.clients_image img:hover {
+transform: scale(1.03);
+}
+.section_title{
   font-size: xx-large;
 }
-.clients_subtitle {
+.section_subtitle {
   font-weight: 500;
   text-transform: uppercase;
   color: #00FFFF;
@@ -335,4 +333,39 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, rgb(99, 102, 241), rgb(168, 85, 247));
+}
+/*Portfolio*/
+.portfolio{
+  padding: 100px 0;
+}
+.portfolio li{
+  display: inline-block;
+  list-style: none;
+}
+.portfolio ul{
+  padding-left: 0px;
+  padding-top: 50px;
+  
+}
+.portfolio_item{
+  position: relative;
+  width: 50%;
+
+}
+.portfolio_item_info{
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 40px;
+  display: none;
+}
+.portfolio_item_overlay{
+  width: 100%;
+  background-color: blue;
+  opacity: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+  
+}
+.portfolio_item:hover .portfolio_item_info{
+  display: inline-block;
 }
